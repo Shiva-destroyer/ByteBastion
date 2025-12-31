@@ -115,13 +115,19 @@ def main():
     # Display banner once at startup
     console.clear()
     display_banner()
-    input("\n[bold cyan]Press Enter to continue...[/bold cyan]\n")
+    
+    first_iteration = True
     
     while True:
-        # Clear screen and show clean menu header
-        os.system('cls' if os.name == 'nt' else 'clear')
-        display_menu_header()
+        # Clear screen only on subsequent iterations (keeps banner visible on first)
+        if not first_iteration:
+            os.system('cls' if os.name == 'nt' else 'clear')
+            display_menu_header()
+        else:
+            console.print("\n")
+        
         display_menu()
+        first_iteration = False
         
         choice = console.input("[bold green]Select a tool (0-10): [/bold green]").strip()
         

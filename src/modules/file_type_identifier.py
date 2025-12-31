@@ -159,8 +159,8 @@ class FileTypeIdentifier:
         """Execute the file type identifier"""
         try:
             console.print("\n[bold cyan]File Type Identifier (Magic Bytes Analysis)[/bold cyan]")
-            console.print("\n[white]This tool analyzes files based on their actual content,")
-            console.print("not just their file extension, to detect potential threats.[/white]")
+            console.print("\nThis tool analyzes files based on their actual content,")
+            console.print("not just their file extension, to detect potential threats.")
             
             file_path = console.input("\n[yellow]Enter file path to analyze: [/yellow]").strip()
             

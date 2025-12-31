@@ -1,0 +1,8 @@
+rich
+pyfiglet
+cryptography
+pynput
+watchdog
+psutil
+schedule
+python-magic

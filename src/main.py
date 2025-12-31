@@ -2,9 +2,11 @@
 """
 ByteBastion - Comprehensive Security Suite
 Developer: Sai Srujan Murthy
+Contact: saisrujanmurthy@gmail.com
 """
 
 import sys
+import os
 from rich.console import Console
 from rich.table import Table
 from rich.panel import Panel
@@ -27,7 +29,7 @@ console = Console()
 
 
 def display_banner():
-    """Display the cybersecurity-styled banner"""
+    """Display the cybersecurity-styled banner (shown once at startup)"""
     banner_text = pyfiglet.figlet_format("ByteBastion", font="doom")
     
     banner = Text()
@@ -36,10 +38,21 @@ def display_banner():
     console.print(Panel(
         banner,
         title="[bold cyan]Comprehensive Security Suite[/bold cyan]",
-        subtitle="[bold yellow]Developer: Sai Srujan Murthy[/bold yellow]",
+        subtitle="[bold yellow]Developer: Sai Srujan Murthy | Contact: saisrujanmurthy@gmail.com[/bold yellow]",
         border_style="green",
         padding=(1, 2)
     ))
+
+
+def display_menu_header():
+    """Display a clean menu header (shown in loop)"""
+    console.print("\n")
+    console.print(Panel(
+        "[bold cyan]ByteBastion Security Menu[/bold cyan]",
+        border_style="green",
+        padding=(0, 2)
+    ))
+    console.print("\n")
 
 
 def display_menu():
@@ -99,23 +112,30 @@ def get_tool_instance(choice):
 
 def main():
     """Main application loop"""
+    # Display banner once at startup
+    console.clear()
+    display_banner()
+    input("\n[bold cyan]Press Enter to continue...[/bold cyan]\n")
+    
     while True:
-        console.clear()
-        display_banner()
+        # Clear screen and show clean menu header
+        os.system('cls' if os.name == 'nt' else 'clear')
+        display_menu_header()
         display_menu()
         
         choice = console.input("[bold green]Select a tool (0-10): [/bold green]").strip()
         
         if choice == "0":
             console.print("\n[bold red]Exiting ByteBastion...[/bold red]")
+            console.print("[bold yellow]Developer: Sai Srujan Murthy | Contact: saisrujanmurthy@gmail.com[/bold yellow]")
             console.print("[bold yellow]Stay secure! 🔒[/bold yellow]\n")
             sys.exit(0)
         
         tool = get_tool_instance(choice)
         
         if tool:
-            console.clear()
-            display_banner()
+            os.system('cls' if os.name == 'nt' else 'clear')
+            display_menu_header()
             try:
                 tool.run()
             except Exception as e:
@@ -134,5 +154,6 @@ if __name__ == "__main__":
         main()
     except KeyboardInterrupt:
         console.print("\n\n[bold red]Program interrupted by user.[/bold red]")
+        console.print("[bold yellow]Developer: Sai Srujan Murthy | Contact: saisrujanmurthy@gmail.com[/bold yellow]")
         console.print("[bold yellow]Stay secure! 🔒[/bold yellow]\n")
         sys.exit(0)

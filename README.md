@@ -29,16 +29,16 @@ For complete technical documentation, usage guides, security best practices, and
 
 ### 🛡️ Security Tools
 
-1. **File Integrity Checker** - SHA-256 hash verification
-2. **Educational Keylogger** - Input monitoring (authorized use only)
-3. **File Type Identifier** - Magic bytes analysis
-4. **Secure Password Generator** - Cryptographic password creation
-5. **Data Deletion Utility** - DoD 5220.22-M secure wipe
-6. **AES Encryption** - AES-256-CBC file encryption
-7. **Directory Sync Monitor** - Real-time file system monitoring
-8. **Temporary File Cleaner** - Safe cache cleanup
-9. **Hidden File Detector** - Malicious file discovery
-10. **Disk Space Analyzer** - Storage analysis with alerts
+1. **[File Integrity Checker](https://github.com/Shiva-destroyer/ByteBastion/wiki/File-Integrity-Checker)** - SHA-256 hash verification
+2. **[Educational Keylogger](https://github.com/Shiva-destroyer/ByteBastion/wiki/Educational-Keylogger)** - Input monitoring (authorized use only)
+3. **[File Type Identifier](https://github.com/Shiva-destroyer/ByteBastion/wiki/File-Type-Identifier)** - Magic bytes analysis
+4. **[Secure Password Generator](https://github.com/Shiva-destroyer/ByteBastion/wiki/Secure-Password-Generator)** - Cryptographic password creation
+5. **[Data Deletion Utility](https://github.com/Shiva-destroyer/ByteBastion/wiki/Data-Deletion-Utility)** - DoD 5220.22-M secure wipe
+6. **[AES Encryption](https://github.com/Shiva-destroyer/ByteBastion/wiki/AES-Encryption)** - AES-256-CBC file encryption
+7. **[Directory Sync Monitor](https://github.com/Shiva-destroyer/ByteBastion/wiki/Directory-Sync-Monitor)** - Real-time file system monitoring
+8. **[Temporary File Cleaner](https://github.com/Shiva-destroyer/ByteBastion/wiki/Temporary-File-Cleaner)** - Safe cache cleanup
+9. **[Hidden File Detector](https://github.com/Shiva-destroyer/ByteBastion/wiki/Hidden-File-Detector)** - Malicious file discovery
+10. **[Disk Space Analyzer](https://github.com/Shiva-destroyer/ByteBastion/wiki/Disk-Space-Analyzer)** - Storage analysis with alerts
 
 ---
 

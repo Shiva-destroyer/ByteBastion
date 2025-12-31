@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 ByteBastion - Comprehensive Security Suite
-Lead Developer: Saisrujanmurthy@gmail.com
+Developer: Sai Srujan Murthy
 """
 
 import sys
@@ -36,7 +36,7 @@ def display_banner():
     console.print(Panel(
         banner,
         title="[bold cyan]Comprehensive Security Suite[/bold cyan]",
-        subtitle="[bold yellow]Lead Developer: Saisrujanmurthy@gmail.com[/bold yellow]",
+        subtitle="[bold yellow]Developer: Sai Srujan Murthy[/bold yellow]",
         border_style="green",
         padding=(1, 2)
     ))
